@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solver", "Solver\Solver.csproj", "{9591E604-3BC3-4C64-8332-D7A765A288EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{61965DF5-3F9A-4D8C-B3EE-EFB157227EE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2020", "AdventOfCode2020\AdventOfCode2020.csproj", "{A526DFDF-E7C6-424A-B6EB-0DC32B21D572}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9591E604-3BC3-4C64-8332-D7A765A288EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9591E604-3BC3-4C64-8332-D7A765A288EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9591E604-3BC3-4C64-8332-D7A765A288EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9591E604-3BC3-4C64-8332-D7A765A288EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61965DF5-3F9A-4D8C-B3EE-EFB157227EE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61965DF5-3F9A-4D8C-B3EE-EFB157227EE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61965DF5-3F9A-4D8C-B3EE-EFB157227EE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61965DF5-3F9A-4D8C-B3EE-EFB157227EE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A526DFDF-E7C6-424A-B6EB-0DC32B21D572}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A526DFDF-E7C6-424A-B6EB-0DC32B21D572}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A526DFDF-E7C6-424A-B6EB-0DC32B21D572}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A526DFDF-E7C6-424A-B6EB-0DC32B21D572}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3C071E2-89B1-486B-9E96-0F289953B131}
+	EndGlobalSection
+EndGlobal
