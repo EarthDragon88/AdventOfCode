@@ -18,7 +18,7 @@ namespace Solver
 
             var container = builder.Build();
 
-            var problem = container.Resolve<Day3>();
+            var problem = container.Resolve<Day4>();
 
             SolveAndDisplay(problem);
 
