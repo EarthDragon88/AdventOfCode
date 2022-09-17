@@ -18,11 +18,11 @@ namespace Solver
 
             var container = builder.Build();
 
-            var problem = container.Resolve<Day9>();
+            var problem = container.Resolve<Day10>();
 
             SolveAndDisplay(problem);
 
-            Console.WriteLine("Press any key to exit.");
+            // Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
         }
 

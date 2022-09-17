@@ -6,7 +6,7 @@ using Utility;
 
 namespace AdventOfCode2020
 {
-    public class Day5 : AdventProblem
+    public class Day05 : AdventProblem
     {
         public override string SolvePuzzle1()
         {
