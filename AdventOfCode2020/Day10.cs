@@ -50,12 +50,12 @@ namespace AdventOfCode2020
 
             Array.Sort(numbers);
 
-            var tracker = new Dictionary<int, long>();
-            var count = CountArrangements(0, numbers, tracker);
+            var cacheDictionary = new Dictionary<int, long>();
+            var count = CountArrangements(0, numbers, cacheDictionary);
             return count.ToString();
         }
 
-        private long CountArrangements(int index, int[] arr, Dictionary<int, long> tracker)
+        private long CountArrangements(int index, int[] arr, Dictionary<int, long> cache)
         {
             if (index >= arr.Length - 1)
                 return 1l;
@@ -66,12 +66,12 @@ namespace AdventOfCode2020
 
             for(int i = index + 1; i < arr.Length && arr[i] <= maxVal; i++)
             {
-                if(tracker.ContainsKey(i))
-                    sum += tracker[i];
+                if(cache.ContainsKey(i))
+                    sum += cache[i];
                 else
                 {
-                    var cnt = CountArrangements(i, arr, tracker);
-                    tracker[i] = cnt;
+                    var cnt = CountArrangements(i, arr, cache);
+                    cache[i] = cnt;
                     sum += cnt;
                 }
             }
