@@ -8,7 +8,7 @@ namespace AdventOfCode2020
 {
     public class Day05 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -24,7 +24,7 @@ namespace AdventOfCode2020
                     highestId = id;
             }
 
-            return highestId.ToString();
+            return highestId;
         }
 
         private int FindRow(string line)
@@ -63,7 +63,7 @@ namespace AdventOfCode2020
             return minRow;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -82,7 +82,7 @@ namespace AdventOfCode2020
 
             for(int i = 0; i < ids.Count() - 1; i++)
                 if(ids[i] + 1 != ids[i + 1])
-                    return (ids[i] + 1).ToString();
+                    return (ids[i] + 1);
 
             throw new Exception("Code should never get here!");
         }

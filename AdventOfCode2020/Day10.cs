@@ -7,7 +7,7 @@ namespace AdventOfCode2020
 {
     public class Day10 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -37,10 +37,10 @@ namespace AdventOfCode2020
                 if (diff == 3) size3Diffs++;
             }
 
-            return (size1Diffs * size3Diffs).ToString();
+            return (size1Diffs * size3Diffs);
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -52,7 +52,7 @@ namespace AdventOfCode2020
 
             var cacheDictionary = new Dictionary<int, long>();
             var count = CountArrangements(0, numbers, cacheDictionary);
-            return count.ToString();
+            return count;
         }
 
         private long CountArrangements(int index, int[] arr, Dictionary<int, long> cache)

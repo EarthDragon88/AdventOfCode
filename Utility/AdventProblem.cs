@@ -22,8 +22,8 @@ namespace Utility
             raw = File.ReadAllText(file);
         }
 
-        public abstract string SolvePuzzle1();
+        public abstract object SolvePuzzle1();
 
-        public abstract string SolvePuzzle2();
+        public abstract object SolvePuzzle2();
     }
 }

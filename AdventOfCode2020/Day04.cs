@@ -8,7 +8,7 @@ namespace AdventOfCode2020
 {
     public class Day04 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var passportTexts = raw.Trim().Split("\n\n");
 
@@ -17,7 +17,7 @@ namespace AdventOfCode2020
                 if (IsValidPuzzle1(passportTexts[i]))
                     validCount++;
 
-            return validCount.ToString();
+            return validCount;
         }
 
         private bool IsValidPuzzle1(string passportText)
@@ -50,7 +50,7 @@ namespace AdventOfCode2020
                 && passportDictionary.ContainsKey("pid");
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var passportTexts = raw.Trim().Split("\n\n");
 
@@ -59,7 +59,7 @@ namespace AdventOfCode2020
                 if (IsValidPuzzle2(passportTexts[i]))
                     validCount++;
 
-            return validCount.ToString();
+            return validCount;
         }
 
         private bool IsValidPuzzle2(string passportText)

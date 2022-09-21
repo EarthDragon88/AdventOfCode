@@ -7,7 +7,7 @@ namespace AdventOfCode2020
 {
     public class Day08 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var instructions = raw.Split('\n');
 
@@ -44,10 +44,10 @@ namespace AdventOfCode2020
                 }
             }
 
-            return accumulator.ToString();
+            return accumulator;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var instructions = raw.Trim().Split('\n');
 

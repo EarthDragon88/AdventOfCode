@@ -7,7 +7,7 @@ namespace AdventOfCode2020
 {
     public class Day06 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var groups = raw.Trim().Split("\n\n");
 
@@ -33,10 +33,10 @@ namespace AdventOfCode2020
                 sum += count;
             }
 
-            return sum.ToString();
+            return sum;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var groups = raw.Trim().Split("\n\n");
 
@@ -74,7 +74,7 @@ namespace AdventOfCode2020
                 sum += count;
             }
 
-            return sum.ToString();
+            return sum;
         }
     }
 }

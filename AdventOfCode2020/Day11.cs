@@ -8,7 +8,7 @@ namespace AdventOfCode2020
 {
     public class Day11 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var input = raw.Trim();
 
@@ -39,7 +39,7 @@ namespace AdventOfCode2020
                 if (seat == '#')
                     seatCount++;
 
-            return seatCount.ToString();
+            return seatCount;
         }
 
         private static void PrintSeats(int width, int height, char[] stepResult)
@@ -141,7 +141,7 @@ namespace AdventOfCode2020
             return numOccupiedAjacentSeats;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var input = raw.Trim();
 
@@ -173,7 +173,7 @@ namespace AdventOfCode2020
                 if (seat == '#')
                     seatCount++;
 
-            return seatCount.ToString();
+            return seatCount;
         }
 
         private char[] ExecuteSteps2(char[] map, int width, int height)

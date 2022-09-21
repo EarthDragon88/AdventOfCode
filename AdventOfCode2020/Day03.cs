@@ -8,7 +8,7 @@ namespace AdventOfCode2020
     public class Day03 : AdventProblem
     {
 
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split('\n');
             var height = lines.Length;
@@ -31,10 +31,10 @@ namespace AdventOfCode2020
                 posy += 1;
             }
 
-            return count.ToString();
+            return count;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -44,7 +44,7 @@ namespace AdventOfCode2020
             long slope4 = CountSlopes(lines, 7, 1);
             long slope5 = CountSlopes(lines, 1, 2);
 
-            return (slope1 * slope2 * slope3 * slope4 * slope5).ToString();
+            return (slope1 * slope2 * slope3 * slope4 * slope5);
         }
 
         private int CountSlopes(string[] lines, int slopeX, int slopeY)

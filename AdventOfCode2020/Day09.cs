@@ -7,7 +7,7 @@ namespace AdventOfCode2020
 {
     public class Day09 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -25,7 +25,7 @@ namespace AdventOfCode2020
                     i);
 
                 if (!sumNumbers.Contains(numbers[i]))
-                    return numbers[i].ToString();
+                    return numbers[i];
             }
 
             throw new InvalidOperationException("Code should never get here");
@@ -42,7 +42,7 @@ namespace AdventOfCode2020
             return result;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -74,7 +74,7 @@ namespace AdventOfCode2020
                                 largest = currNum;
                         }
 
-                        return (smallest + largest).ToString();
+                        return (smallest + largest);
                     }
                         
                 }

@@ -7,7 +7,7 @@ namespace AdventOfCode2020
 {
     public class Day02 : AdventProblem
     {
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split("\n");
             var validCount = 0;
@@ -16,7 +16,7 @@ namespace AdventOfCode2020
                 if (IsValidPuzzle1(line))
                     validCount++;
 
-            return validCount.ToString();
+            return validCount;
         }
 
         private bool IsValidPuzzle1(string policyAndPassword)
@@ -38,7 +38,7 @@ namespace AdventOfCode2020
                 && occurenceCount <= maximum;
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split("\n");
             var validCount = 0;
@@ -47,7 +47,7 @@ namespace AdventOfCode2020
                 if (IsValidPuzzle2(line))
                     validCount++;
 
-            return validCount.ToString();
+            return validCount;
         }
 
         private bool IsValidPuzzle2(string policyAndPassword)

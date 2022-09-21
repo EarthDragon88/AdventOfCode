@@ -9,7 +9,7 @@ namespace AdventOfCode2020
     public class Day07 : AdventProblem
     {
 
-        public override string SolvePuzzle1()
+        public override object SolvePuzzle1()
         {
             var lines = raw.Trim().Split('\n');
             var bagDictionary = new Dictionary<string, string>();
@@ -25,7 +25,7 @@ namespace AdventOfCode2020
             var bagTracker = new HashSet<string>();
             FindParentsColorCount("shiny gold", bagDictionary, bagTracker);
 
-            return bagTracker.Count().ToString();
+            return bagTracker.Count();
         }
 
         public void FindParentsColorCount(
@@ -41,7 +41,7 @@ namespace AdventOfCode2020
                 }
         }
 
-        public override string SolvePuzzle2()
+        public override object SolvePuzzle2()
         {
             var lines = raw.Trim().Split('\n');
 
@@ -57,7 +57,7 @@ namespace AdventOfCode2020
 
             var count = CountBags("shiny gold", bagDictionary);
 
-            return count.ToString();
+            return count;
         }
 
         private int CountBags(
