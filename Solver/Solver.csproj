@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCode2015\AdventOfCode2015.csproj" />
+    <ProjectReference Include="..\AdventOfCode2016\AdventOfCode2016.csproj" />
+    <ProjectReference Include="..\AdventOfCode2017\AdventOfCode2017.csproj" />
+    <ProjectReference Include="..\AdventOfCode2018\AdventOfCode2018.csproj" />
+    <ProjectReference Include="..\AdventOfCode2019\AdventOfCode2019.csproj" />
+    <ProjectReference Include="..\AdventOfCode2020\AdventOfCode2020.csproj" />
+    <ProjectReference Include="..\AdventOfCode2021\AdventOfCode2021.csproj" />
+    <ProjectReference Include="..\AdventOfCode2022\AdventOfCode2022.csproj" />
+  </ItemGroup>
+
+</Project>
